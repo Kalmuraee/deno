@@ -174,7 +174,7 @@ jobs:
 
       - name: Pre-release (windows)
         if: startsWith(matrix.os, 'windows') && matrix.kind == 'test_release'
-        run: gzip -f -S -x86_64-pc-windows-msvc.gz target/release/deno
+        run: gzip -f -S -x86_64-pc-windows-msvc.gz target/release/deno.exe
 
       - name: Release
         uses: softprops/action-gh-release@v1
